@@ -1,0 +1,95 @@
+<ion-content>
+                    <!--HEADER DESKTOP-->
+  <ion-grid class="bg-none bg-lg-block header_desktop w-100">
+    <ion-row>
+      <ion-col size="4">
+        <ion-row justify-content-center>
+          <ion-col size="auto" class="h-100 w-100 cliquable" (click)="goTo('/')">
+            <img src="../../assets/img/logo_blanc.png" class="logo-header">
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="6">
+        <ion-row justify-content-end class="h-100">
+          <ion-col size="3">
+            <div class="header-content">
+                Catalogue
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="header-content">
+              Console
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="header-content">
+              Participer
+            </div>
+          </ion-col>
+          <ion-col size="3">
+            <div class="header-content kid">
+              KID
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size="2">
+        <ion-row class="h-100" justify-content-end>
+          <ion-col size="6">
+            <div class="header-content cliquable" (click)="goTo('connexion')">
+              Connexion
+            </div>
+          </ion-col>
+          <ion-col size="6">
+            <div class="header-content cliquable" (click)="goTo('inscription')">
+              Inscription
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+                    <!--HEADER DESKTOP-->
+
+  <ion-grid class="page-content">
+      <!--HEADER content Mobile-->
+    <ion-row justify-content-center class="bg-flex bg-lg-none">
+      <ion-col size="6" size-md="5" size-lg="4">
+        <img src="../../assets/img/logo_blanc.png" class="logo-header cliquable">
+      </ion-col>
+    </ion-row>
+      <!--HEADER content Mobile-->
+  </ion-grid>
+      
+                    <!--HEADER Mobile-->
+  <ion-grid class="bg-block bg-lg-none header_mobile w-100">
+    <ion-row class="h-100" justify-content-center align-item-center>
+      <ion-col >
+        <div class="header-content">
+          Catalogue
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="header-content">
+          Console
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="header-content">
+          Participer
+        </div>
+      </ion-col>
+      <ion-col size="1" text-center no-padding>
+        <div class="header-content kid">
+          KID
+        </div>
+      </ion-col>
+      <ion-col text-center>
+        <div class="header-content cliquable" (click)="goTo('connexion')">
+          Connexion
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--HEADER Mobile-->
+</ion-content>
