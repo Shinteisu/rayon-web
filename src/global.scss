@@ -10,42 +10,22 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
-
 /*
  * Color
  */ 
-
 $color-primary: #f3f1f2;
 $color-secondary: #58bdaf; 
 $color-tertiary: #f3bd25;    
 $color-quarter: #f4901e;    
 $color-quarter: #f12629;    
 
+
+
 /*
- * Header
+ * General
  */
-
- .header_desktop{
-    background: #262626;
-    color: $color-primary;
-}
-
-.header_mobile{
-    background: #262626;
-    height: 90.5px;
-    color: $color-primary;
-    position: fixed;
-    bottom: 0;
-}
-.header-content{
-    position: absolute;
-    bottom: 10px;
-}
-.kid{
-    color: $color-secondary;
-}
-.logo-header{
-    width: 180px; 
+* {
+//  font-family: $ion-font-family;
 }
 
 

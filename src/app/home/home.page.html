@@ -1,64 +1,16 @@
 <ion-content>
-                    <!--HEADER DESKTOP-->
-  <ion-grid class="bg-none bg-lg-block header_desktop w-100">
-    <ion-row>
-      <ion-col size="4">
-        <ion-row justify-content-center>
-          <ion-col size="auto" class="h-100 w-100 cliquable">
-            <img src="../../assets/img/logo_blanc.png" class="logo-header" (click)="goTo('/')">
-          </ion-col>
-        </ion-row>
-      </ion-col>
-      <ion-col size="6">
-        <ion-row justify-content-end class="h-100">
-          <ion-col size="3">
-            <div class="header-content">
-                Catalogue
-            </div>
-          </ion-col>
-          <ion-col size="3">
-            <div class="header-content">
-              Console
-            </div>
-          </ion-col>
-          <ion-col size="3">
-            <div class="header-content">
-              Participer
-            </div>
-          </ion-col>
-          <ion-col size="3">
-            <div class="header-content kid">
-              KID
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-col>
-      <ion-col size="2">
-        <ion-row class="h-100" justify-content-end>
-          <ion-col size="6">
-            <div class="header-content cliquable" (click)="goTo('connexion')">
-              Connexion
-            </div>
-          </ion-col>
-          <ion-col size="6">
-            <div class="header-content cliquable" (click)="goTo('inscription')">
-              Inscription
-            </div>
-          </ion-col>
-        </ion-row>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-                    <!--HEADER DESKTOP-->
-
+  
+  <!-- IMPORT HERE HEADER DESKTOP -->
+  <app-header></app-header>
   <ion-grid class="page-content">
-      <!--HEADER content Mobile-->
+    <!--HEADER content Mobile-->
     <ion-row justify-content-center class="bg-flex bg-lg-none">
       <ion-col size="6" size-md="5" size-lg="4" (click)="goTo('/')">
         <img src="../../assets/img/logo_blanc.png" class="logo-header cliquable">
       </ion-col>
-      <!--HEADER content Mobile-->
     </ion-row>
+    <!--HEADER content Mobile-->
+
   
     <ion-row class="container pt-4">
       <ion-col size="7" size-md="8" size-lg="9">
@@ -67,11 +19,12 @@
             <h1 class="section-title mt-0">Le jeu du mois</h1>
           </ion-col>
         </ion-row>
-        <ion-row class="pr-4">
-          <ion-col>
-            <img src="../../assets/img/Galaga.png" class="">
-          </ion-col>
-        </ion-row>
+        
+        <!-- 
+          CARROUSSEL HERE 
+        -->
+        <app-carroussel></app-carroussel>
+        
         <ion-row class="pr-4">
           <ion-col>
             <h2 class="sub-title" text-center>Galaga : Starbuster II</h2> <!--LE TITRE A METTRE ICI-->
@@ -187,5 +140,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+
+
   <!--HEADER Mobile-->
 </ion-content>
