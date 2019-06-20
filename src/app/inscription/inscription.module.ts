@@ -6,6 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 
 import { InscriptionPage } from './inscription.page';
+import { HeaderComponent } from '../components/header/header.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,9 @@ const routes: Routes = [
     IonicModule,
     RouterModule.forChild(routes)
   ],
-  declarations: [InscriptionPage]
+  declarations: [
+    InscriptionPage,
+    HeaderComponent
+  ]
 })
 export class InscriptionPageModule {}

@@ -7,6 +7,7 @@ import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
 import { HeaderComponent } from '../components/header/header.component';
 import { CarrousselComponent } from '../components/carroussel/carroussel.component';
+import { SmPreviewComponent } from '../components/sm-preview/sm-preview.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { CarrousselComponent } from '../components/carroussel/carroussel.compone
   declarations: [
     HomePage,
     HeaderComponent,
-    CarrousselComponent
+    CarrousselComponent,
+    SmPreviewComponent
   ]
 })
 export class HomePageModule {}
